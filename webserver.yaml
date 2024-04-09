@@ -4,9 +4,9 @@
 
 # Set the hostname based on the inventory file : servername
 # http://docs.ansible.com/ansible/latest/modules/hostname_module.html
-  - name: Set the hostname
-    hostname: 
-     name: "{{ servername }}"
+#  - name: Set the hostname
+#    hostname: 
+#     name: "{{ servername }}"
 
 # We need the Epel repository to install nginx
   - name: Install epel release for nginx
