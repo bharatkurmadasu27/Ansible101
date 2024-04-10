@@ -23,11 +23,11 @@
        - vim
 
 # http://docs.ansible.com/ansible/latest/modules/service_module.html
-  - name: Ensure nginx is set to start on boot
-    service: 
-     name: nginx 
-     state: started 
-     enabled: yes 
+#  - name: Ensure nginx is set to start on boot
+ #   service: 
+  #   name: nginx 
+   #  state: started 
+    # enabled: yes 
 
 # http://docs.ansible.com/ansible/latest/modules/template_module.html
   - name: Send a custom index.html to the server
