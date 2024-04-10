@@ -10,16 +10,15 @@
 #     name: "{{ servername }}"
 
 # We need the Epel repository to install nginx
-  - name: Install epel release for nginx
-    dnf: 
-     name: epel-release 
-     state: present
+#  - name: Install epel release for nginx
+#    dnf: 
+#     name: epel-release 
+#     state: present
 
 # http://docs.ansible.com/ansible/latest/modules/yum_module.html
   - name: Install a list of packages - Redhat
     dnf: name={{item}} state=present
     with_items:
-       - epel-release
        - nginx
        - vim
 
